@@ -9,12 +9,12 @@ import "aos/dist/aos.css"
 const Campaigns = () => {
   const {
     currentData: allCampaignData,
-    isLaoding: allCampaignDataIsLoading,
+    isLoading: allCampaignDataIsLoading,
     isSuccess: allCampaignDataSuccess,
     isError: allCampaignDataError,
     isFetching: allCampaignDataIsFetching,
   } = useSelectAllCampaignQuery()
-  console.log(allCampaignDataIsLoading, allCampaignDataSuccess, allCampaignDataError, allCampaignDataIsFetching)
+
   return (
     <Layout>
       <Header dontShowBackButton={true} headerText="ALL CAMPAIGN" />
