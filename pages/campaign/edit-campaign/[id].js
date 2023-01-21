@@ -15,7 +15,7 @@ const NewCampaign = () => {
 
   const { data: campaignData, isLoading: campaignDataIsLoading } = useSelectACampaignQuery(id)
   const theCampaign = {
-    name: campaignData?.data?.CampaignEditFormSkeletonname ?? "",
+    name: campaignData?.data?.name ?? "",
     from_date: campaignData?.data?.from_date ?? "",
     to_date: campaignData?.data?.to_date ?? "",
     total_budget: campaignData?.data?.total_budget ?? "",
