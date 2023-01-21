@@ -14,18 +14,12 @@ const Campaigns = () => {
     isError: allCampaignDataError,
     isFetching: allCampaignDataIsFetching,
   } = useSelectAllCampaignQuery()
-  console.log(
-    allCampaignData,
-    allCampaignDataIsLoading,
-    allCampaignDataSuccess,
-    allCampaignDataError,
-    allCampaignDataIsFetching
-  )
+  console.log(allCampaignDataIsLoading, allCampaignDataSuccess, allCampaignDataError, allCampaignDataIsFetching)
   return (
     <Layout>
       <Header dontShowBackButton={true} headerText="ALL CAMPAIGN" />
       {!allCampaignData && allCampaignDataIsFetching && !allCampaignDataSuccess && <AllCampaignSkeleton />}
-      {!allCampaignDataIsLoading && !allCampaignData && <NoCampaignMessage />}
+      {!allCampaignDataIsLoading && allCampaignDataError && <NoCampaignMessage />}
       {!allCampaignDataIsFetching && !allCampaignDataError && <AllCampaignData allCampaignData={allCampaignData} />}
     </Layout>
   )
