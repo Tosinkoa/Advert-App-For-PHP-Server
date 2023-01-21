@@ -44,7 +44,9 @@ const CampaignForm = ({ theCampaign, formId, campaignId, newCampaign = true }) =
     if (!campaignImage && !campaignImageURL) return toast.warning("You need to add an image to continue!")
     const formData = new FormData()
     formData.append("name", name)
-    campaignImage && formData.append("creative_upload", campaignImage)
+    if (campaignImage) {
+      formData.append("creative_upload", campaignImage)
+    }
     formData.append("daily_budget", daily_budget)
     formData.append("from_date", from_date)
     formData.append("to_date", to_date)

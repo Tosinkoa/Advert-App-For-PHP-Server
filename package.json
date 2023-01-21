@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "push-to-github": "https://github.com/Tosinkoa/Advert-Frontend-PHP-For-Server.git/master",
-    "fast": "yarn build && git add . && git commit -m 'Done' && push-to-github"
+    "push-to-github": "git push https://github.com/Tosinkoa/Advert-Frontend-PHP-For-Server.git/",
+    "fast": "yarn build && git add . && git commit -m 'Done' && yarn push-to-github"
   },
   "dependencies": {
     "@next/bundle-analyzer": "^13.1.1",
