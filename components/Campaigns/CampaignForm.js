@@ -55,12 +55,8 @@ const CampaignForm = ({ theCampaign, formId, campaignId, newCampaign = true }) =
     newCampaign
       ? (result = await createCampaign(formData))
       : (result = await updateCampaign({ campaignId: campaignId, formData: formData }))
-    if (result?.error) {
-      if (typeof result?.error?.data?.error === "string") return toast.warning(result?.error?.error)
-    } else {
-      toast.success(result?.error?.error[0])
-      return router.push("/campaign")
-    }
+    if (result?.error) return toast.warning(result?.error?.error)
+    return router.push("/campaign")
   }
 
   // Preview handler for showing the current campaign user is working on

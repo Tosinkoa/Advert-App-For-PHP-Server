@@ -4,7 +4,7 @@ import Image from "next/legacy/image"
 import { FaTimes } from "react-icons/fa"
 import { useDispatch, useSelector } from "react-redux"
 
-const PreviewComponent = ({ openAndClosePreview }) => {
+const PreviewComponent = () => {
   const dispatch = useDispatch()
   const previewCampaignData = useSelector((state) => state.previewCampaign.previewCampaignData)
   const toDate = dayjs(previewCampaignData?.to_date).format("MMM D, YYYY")
@@ -29,7 +29,7 @@ const PreviewComponent = ({ openAndClosePreview }) => {
             </div>
             {previewCampaignData?.creative_upload ? (
               <Image
-              objectPosition="center"
+                objectPosition="center"
                 src={previewCampaignData?.creative_upload}
                 className="rounded-md"
                 alt="preview-image"

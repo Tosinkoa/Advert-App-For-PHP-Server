@@ -11,7 +11,7 @@ import { useDispatch } from "react-redux"
 const AllCampaignData = ({ allCampaignData }) => {
   return (
     <div className="all_campaign_grid">
-      {allCampaignData?.map((data) => (
+      {allCampaignData?.data?.map((data) => (
         <div key={data.id} data-aos="fade-" data-aos-delay="200" data-aos-offset="0">
           <AllCampaign
             id={data.id}
