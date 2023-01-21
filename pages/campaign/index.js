@@ -19,7 +19,9 @@ const Campaigns = () => {
     <Layout>
       <Header dontShowBackButton={true} headerText="ALL CAMPAIGN" />
       {!allCampaignData && allCampaignDataIsFetching && !allCampaignDataSuccess && <AllCampaignSkeleton />}
-      {!allCampaignDataIsLoading && allCampaignDataError && <NoCampaignMessage />}
+      {!allCampaignData && allCampaignDataIsLoading && !allCampaignDataSuccess && !allCampaignDataError && (
+        <NoCampaignMessage />
+      )}
       {!allCampaignDataIsFetching && !allCampaignDataError && <AllCampaignData allCampaignData={allCampaignData} />}
     </Layout>
   )
