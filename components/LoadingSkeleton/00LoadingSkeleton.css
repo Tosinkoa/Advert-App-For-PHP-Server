@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*------------------------- AllCampaignSkeleton -------------------------*/
+.all_campaign_skeleton_bg {
+  @apply grid lg:grid-cols-4 md:grid-cols-3 w-11/12 gap-4 mx-auto transition-all duration-500 animate-pulse;
+}
+.all_campaign_skeleton_items {
+  @apply w-full h-60 rounded-md relative bg-gray-300;
+}
+/*------------------------- CampaignEditFormSkeleton -----------------------*/
+.campaign_edit_skeleton {
+  @apply grid lg:grid-cols-2 space-y-8 lg:space-y-0 items-center animate-pulse transition-all duration-500;
+}
+.campaign_edit_skeleton_bg {
+  @apply h-80 relative rounded-md border flex items-center mx-auto place-content-center  bg-gray-300  flex-col font-bold w-11/12 md:w-80;
+}
+.campaign_edit_skeleton_sec_bg {
+  @apply flex flex-col  gap-y-3 md:w-9/12 lg:mr-auto w-11/12 mx-auto;
+}
+.campaign_edit_sekeleton_name {
+  @apply rounded-sm w-full bg-gray-300 h-12;
+}
+.campaign_edit_skeleton_left_input {
+  @apply mr-2 rounded-sm w-full pl-5 h-12 bg-gray-300;
+}
+.campaign_edit_skeleton_right_input {
+  @apply mr-2 rounded-sm w-full pl-5  h-12 bg-gray-300;
+}
+.campaign_edit_skeleton_but_bg {
+  @apply flex mt-8 justify-between w-full;
+}
+.campaign_edit_skeleton_left_but {
+  @apply mr-2 rounded-sm pl-5 h-8 w-20 bg-gray-300;
+}
+.campaign_edit_skeleton_right_but {
+  @apply mr-2 rounded-sm pl-5  h-8 w-20 bg-gray-300;
+}

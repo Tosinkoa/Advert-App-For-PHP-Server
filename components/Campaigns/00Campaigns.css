@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*------------------------- AllCampaign -------------------------*/
+.all_campaign_bg {
+  @apply w-full min-w-full h-60 rounded-md relative hover:scale-105 transition-all duration-700;
+}
+.all_campaign_overlay {
+  @apply absolute bg-gradient-to-t from-black to-transparent rounded-md h-full w-full top-0 left-0 bottom-0 right-0 z-10 opacity-70 flex flex-col;
+}
+.all_campaign_icons_bg {
+  @apply w-10/12 mx-auto right-0 left-0 rounded-full z-10 flex top-4 text-2xl text-white absolute justify-between;
+}
+.all_campaign_text_bg {
+  @apply text-white bottom-4 left-4 w-3/4 z-10 absolute;
+}
+.all_campaign_name {
+  @apply truncate  font-bold text-sm;
+}
+.all_campaign_details {
+  @apply flex flex-col text-xs font-semibold;
+}
+.all_campaign_budget {
+  @apply flex space-x-6 flex-row;
+}
+.all_campaign_header {
+  @apply text-lg md:text-2xl font-bold mb-10 lg:mb-16 flex justify-center;
+}
+.all_campaign_grid {
+  @apply grid lg:grid-cols-4 md:grid-cols-3 w-11/12 gap-4 mx-auto;
+}
+
+/*------------------------- CampaignForm -------------------------*/
+.campaign_form_bg {
+  @apply grid lg:grid-cols-2 space-y-8 lg:space-y-0 items-center;
+}
+.campaign_form_img_bg {
+  @apply h-80 relative rounded-md border flex items-center mx-auto place-content-center  border-gray-400 flex-col font-bold w-11/12 md:w-80;
+}
+.campaign_form_img {
+  @apply absolute top-0 bottom-0 left-0 right-0  z-10 h-full rounded-md;
+}
+.campaign_form_input {
+  @apply rounded-full h-full opacity-0;
+}
+.campaign_form_form_bg {
+  @apply flex flex-col  gap-y-3 md:w-9/12 lg:mr-auto w-11/12 mx-auto;
+}
+.campaign_form_form_input {
+  @apply rounded-sm w-full;
+}
+.campaign_form_button_bg {
+  @apply flex justify-between w-10/12 mr-auto;
+}
+.campaign_form_preview_button {
+  @apply w-24 px-4 py-2 text-gray-50 flex m-2 ring-1 ring-gray-400 rounded-sm font-bold !bg-primary-500  hover:!bg-primary-400 focus:!bg-primary-400;
+}
+.campaign_form_submit_button {
+  @apply w-24 px-4 py-2 text-gray-50 flex m-2 ring-1 ring-gray-400 rounded-sm font-bold !bg-green-500  hover:!bg-green-400 focus:!bg-green-400;
+}
+.submit_button_spinner {
+  @apply border h-6 w-6 border-b-0 rounded-full animate-spin duration-100 mx-auto;
+}
+.campaign_form_dollar {
+  @apply absolute top-[37px] left-2;
+}
+/*------------------------- PreviewComponent -------------------------*/
+.preview_component_bg {
+  @apply fixed top-0 left-0 right-0 bottom-0 z-20 h-[70vh] md:h-[80vh] md:w-8/12 bg-gray-50 my-auto w-11/12 rounded-md mx-auto;
+}
+.preview_component_overlay {
+  @apply bg-black opacity-60 select-none top-0 bottom-0 w-full min-h-screen inset-0 absolute z-20;
+}
+.preview_component_img_overlay {
+  @apply absolute bg-gradient-to-t from-black to-transparent rounded-md  h-full w-full top-0 left-0 bottom-0 right-0 z-20 opacity-70;
+}
+.preview_component_cancel_button {
+  @apply rounded-full p-2 bg-black opacity-75 z-20 absolute right-4 top-3 text-2xl text-gray-50 cursor-pointer;
+}
+.preview_component_campaign_detail {
+  @apply text-white  absolute z-20 bottom-10 left-4 md:left-10 flex flex-col font-semibold;
+}
+.preview_component_name {
+  @apply font-bold text-4xl truncate;
+}

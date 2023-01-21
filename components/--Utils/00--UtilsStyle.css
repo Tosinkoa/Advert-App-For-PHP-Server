@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*------------------------- FormHeader -------------------------*/
+.header_bg {
+  @apply pb-10 pt-24;
+}
+.header_icon {
+  @apply ml-6 md:ml-32 text-2xl cursor-pointer;
+}
+.header_text {
+  @apply text-lg md:text-xl font-bold mb-3 lg:mb-10 flex justify-center;
+}
+/*------------------------- Grid -------------------------*/
+.left_text_right_pic {
+  @apply grid md:grid-cols-2 my-16 items-center scroll-mt-24;
+}
+.left_right_text_bg {
+  @apply row-start-2 md:col-start-1 md:row-start-1 px-8 text-center space-y-3 lg:w-3/4 w-4/5 mx-auto flex flex-col font-semibold;
+}
+.grid_header_text {
+  @apply font-bold text-3xl md:text-5xl;
+}
+.left_right_pic_bg {
+  @apply px-8 row-start-1 md:col-start-2 -mt-28 md:mt-0;
+}
+.grid_pic {
+  @apply relative h-[55vh]  w-[10/12] lg:w-[w-7/12] flex mx-auto rounded-md mt-20 md:mt-0;
+}
+.right_text_left_pic {
+  @apply grid md:grid-cols-2 my-16 items-center space-y-10 md:space-y-0 scroll-mt-24;
+}
+
+.right_left_text_bg {
+  @apply px-8 text-center space-y-3  lg:w-3/4 w-4/5 mx-auto flex flex-col font-semibold;
+}
+/*------------------------- NoCampaignMessage -------------------------*/
+.no_campagin_image_bg {
+  @apply relative h-60 w-60 mx-auto rounded-2xl;
+}
+.no_campaign_message_text {
+  @apply my-4 font-semibold  px-10 text-center;
+}
+/*------------------------- Formik -------------------------*/
+.mylabel {
+  @apply font-bold mb-1;
+}

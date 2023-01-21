@@ -1,0 +1,37 @@
+{
+  "name": "arce-ware-project",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^13.1.1",
+    "@next/codemod": "^13.1.1",
+    "@next/font": "13.1.1",
+    "@reduxjs/toolkit": "^1.9.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "aos": "^2.3.4",
+    "autoprefixer": "^10.4.13",
+    "dayjs": "^1.11.7",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.1.1",
+    "formik": "^2.2.9",
+    "framer-motion": "^8.0.2",
+    "next": "13.1.1",
+    "postcss": "^8.4.20",
+    "postcss-import": "^15.1.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-redux": "^8.0.5",
+    "react-toastify": "^9.1.1",
+    "sharp": "^0.31.3",
+    "tailwindcss": "^3.2.4",
+    "typewriter-effect": "^2.19.0",
+    "yup": "^0.32.11"
+  }
+}
